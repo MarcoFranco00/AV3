@@ -1,0 +1,65 @@
+body {
+    background-color: #FFFDF8;
+    color: #3E2723;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #3E2723;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-link {
+    color: #F5EBDD;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #C49A6C;
+}
+
+h1 {
+    color: #3E2723;
+}
+
+.caixa {
+    max-width: 600px;
+    background-color: #F5EBDD;
+    border: 2px solid #C49A6C;
+}
+
+.card-cafe {
+    background-color: #F5EBDD;
+    border: 1px solid #C49A6C;
+}
+
+.icone {
+    font-size: 48px;
+    color: #6D4C41;
+}
+
+.btn-cafe {
+    background-color: #6D4C41;
+    color: white;
+    border: none;
+}
+
+.btn-cafe:hover {
+    background-color: #3E2723;
+    color: white;
+}
+
+footer {
+    background-color: #3E2723;
+    color: #F5EBDD;
+}
+
+.img-metodo {
+    height: 200px;
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
+}

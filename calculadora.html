@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora - CoffeeLab</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">☕ CoffeeLab</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="metodos.html">Métodos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="receitas.html">Receitas</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="calculadora.html">Calculadora</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container mt-5">
+            <h1 class="text-center mb-4">Calculadoras</h1>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card caixa shadow h-100">
+                        <div class="card-body p-4">
+                            <h2 class="h4 text-center mb-4">Quantidade de água</h2>
+                            <label for="cafe" class="form-label">Quantidade de café (gramas):</label>
+                            <input type="number" id="cafe" class="form-control mb-3" placeholder="Ex: 20">
+                            <label for="proporcao" class="form-label">Proporção (1 g de café para quantos ml de água):</label>
+                            <select id="proporcao" class="form-select mb-3">
+                                <option value="12">1:12 - café forte</option>
+                                <option value="15">1:15 - equilibrado</option>
+                                <option value="16" selected>1:16 - padrão V60</option>
+                                <option value="17">1:17 - café suave</option>
+                            </select>
+                            <button class="btn btn-cafe w-100" onclick="calcularAgua()">Calcular água</button>
+                            <div class="alert alert-light text-center mt-4 mb-0" id="resultado-agua">
+                                O resultado aparecerá aqui.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card caixa shadow h-100">
+                        <div class="card-body p-4">
+                            <h2 class="h4 text-center mb-4">Custo do café</h2>
+                            <label for="cafe-custo" class="form-label">Café usado no preparo (gramas):</label>
+                            <input type="number" id="cafe-custo" class="form-control mb-3" placeholder="Ex: 20">
+                            <label for="preco" class="form-label">Preço do pacote de café (R$):</label>
+                            <input type="number" id="preco" class="form-control mb-3" placeholder="Ex: 25">
+                            <label for="peso" class="form-label">Peso do pacote (gramas):</label>
+                            <input type="number" id="peso" class="form-control mb-3" value="250">
+                            <button class="btn btn-cafe w-100" onclick="calcularCusto()">Calcular custo</button>
+                            <div class="alert alert-light text-center mt-4 mb-0" id="resultado-custo">
+                                O resultado aparecerá aqui.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center py-4 mt-5">CoffeeLab • Projeto A3 - Usabilidade Web</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/calculadora.js"></script>
+    </body>
+</html>

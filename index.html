@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seu laboratório de café - CoffeeLab</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">☕ CoffeeLab</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="metodos.html">Métodos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="receitas.html">Receitas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container mt-5">
+            <div class="text-center mb-5">
+                <h1>Bem-vindo ao CoffeeLab!</h1>
+                <p class="lead">Descubra novos métodos e receitas de café.</p>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card card-cafe h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <div class="icone"><i class="bi bi-cup-hot"></i></div>
+                            <h5>Métodos</h5>
+                            <p>Conheça V60, Prensa Francesa, AeroPress e Moka.</p>
+                            <a href="metodos.html" class="btn btn-cafe">Ver métodos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-cafe h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <div class="icone"><i class="bi bi-book"></i></div>
+                            <h5>Receitas</h5>
+                            <p>Cadastre e guarde suas receitas favoritas.</p>
+                            <a href="receitas.html" class="btn btn-cafe">Minhas receitas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-cafe h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <div class="icone"><i class="bi bi-calculator"></i></div>
+                            <h5>Calculadora</h5>
+                            <p>Descubra quanta água usar para o seu café.</p>
+                            <a href="calculadora.html" class="btn btn-cafe">Calcular</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card caixa mx-auto shadow">
+                <div class="card-body p-4">
+                    <h4 class="text-center mb-3">Que café combina com o clima?</h4>
+                    <label for="cidade" class="form-label">Cidade:</label>
+                    <div class="input-group mb-3">
+                        <input type="text" id="cidade" class="form-control" value="Curitiba">
+                        <button class="btn btn-cafe" onclick="buscarTemperatura()">Consultar</button>
+                    </div>
+                    <div class="alert alert-light text-center mb-0" id="resultado">
+                        Digite uma cidade e clique em Consultar.
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center py-4 mt-5">CoffeeLab • Projeto A3 - Usabilidade Web</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/inicio.js"></script>
+    </body>
+</html>
