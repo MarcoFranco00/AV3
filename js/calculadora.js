@@ -14,7 +14,6 @@ function calcularAgua() {
         "Para <strong>" + cafe + " g</strong> de café use <strong>" + agua + " ml</strong> de água.";
 }
 
-// ----- Calculadora de custo -----
 function calcularCusto() {
     var cafe = Number(document.getElementById("cafe-custo").value);
     var preco = Number(document.getElementById("preco").value);
@@ -34,7 +33,6 @@ function calcularCusto() {
 }
 
 function buscarDolar(custo) {
-    // API: cotação do dólar (AwesomeAPI)
     var url = "https://economia.awesomeapi.com.br/json/last/USD-BRL";
 
     fetch(url)

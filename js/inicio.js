@@ -12,7 +12,6 @@ function buscarTemperatura() {
 
     mostrarMensagem("Buscando...");
 
-    // Requisição 1: descobre latitude e longitude da cidade
     var url = "https://geocoding-api.open-meteo.com/v1/search?count=1&language=pt&name=" + encodeURIComponent(cidade);
 
     fetch(url)
@@ -32,7 +31,6 @@ function buscarTemperatura() {
 }
 
 function buscarClima(local) {
-    // Requisição 2: busca a temperatura atual usando a latitude e longitude
     var url = "https://api.open-meteo.com/v1/forecast?current=temperature_2m&latitude=" +
         local.latitude + "&longitude=" + local.longitude;
 
